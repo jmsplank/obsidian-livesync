@@ -30,6 +30,7 @@ services:
   # CouchDB — the only required service
   # ---------------------------------------------------------------------------
   couchdb:
+    mem_limit: 512m
     image: couchdb:3.5
     restart: unless-stopped
     # NOTE: Do NOT set user: here — the CouchDB entrypoint starts as root to
